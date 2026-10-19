@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { Upload, Typography, message } from "antd";
 import { InboxOutlined, CloseCircleOutlined } from "@ant-design/icons";
-
 const { Title } = Typography;
 const { Dragger } = Upload;
-
 const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
   const [preview, setPreview] = useState(null);
-
   const uploadProps = {
     name: "file",
     multiple: false,
