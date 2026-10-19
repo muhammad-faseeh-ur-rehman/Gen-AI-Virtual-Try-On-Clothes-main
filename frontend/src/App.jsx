@@ -79,12 +79,10 @@ function App() {
     formData.append("gender", gender || "");
     formData.append("garment_type", garmentType || "");
     formData.append("style", style || "");
-
     try {
       const response = await axios.post("http://localhost:8000/api/try-on", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-
       const newResult = {
         id: Date.now(),
         resultImage: response.data.image,
@@ -108,7 +106,6 @@ function App() {
   const cardColor = isDarkMode ? "#1c1c1c" : "#ffffff";
   const textColor = isDarkMode ? "#e4e4e4" : "#111827";
   const subText = isDarkMode ? "#9ca3af" : "#4b5563";
-
   return (
     <ConfigProvider
       theme={{
