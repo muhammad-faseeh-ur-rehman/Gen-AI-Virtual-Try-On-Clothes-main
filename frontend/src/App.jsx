@@ -352,7 +352,6 @@ function App() {
                 </Text>
               </div>
             )}
-
             {history.length > 0 && (
               <div className="mt-24">
                 <Divider />
@@ -405,9 +404,7 @@ function App() {
             )}
           </div>
         </Content>
-
         <Footer isDarkMode={isDarkMode} />
-
         <ToastContainer theme={isDarkMode ? "dark" : "light"} />
       </Layout>
     </ConfigProvider>
