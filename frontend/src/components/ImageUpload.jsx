@@ -38,7 +38,6 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
     setPreview(null);
     onImageChange(null);
   };
-
   return (
     <div className="w-full transition-all duration-300 flex flex-col items-center">
       {label && (
@@ -46,7 +45,6 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
           {label}
         </Title>
       )}
-
       {preview ? (
         <div className="relative w-full flex justify-center items-center mt-4">
           <div className="relative">
@@ -56,7 +54,6 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
               className="h-[200px] w-[200px] object-contain rounded-lg shadow-md"
               style={{ display: "block" }}
             />
-
             <CloseCircleOutlined
               onClick={handleRemove}
               style={{
@@ -106,5 +103,4 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
     </div>
   );
 };
-
 export default ImageUpload;
