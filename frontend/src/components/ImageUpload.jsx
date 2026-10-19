@@ -17,13 +17,11 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
         message.error("You can only upload image files!");
         return Upload.LIST_IGNORE;
       }
-
       const isLt10M = file.size / 1024 / 1024 < 10;
       if (!isLt10M) {
         message.error("Image must be smaller than 10MB!");
         return Upload.LIST_IGNORE;
       }
-
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreview(reader.result);
@@ -36,7 +34,6 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
       console.log("Dropped files", e.dataTransfer.files);
     },
   };
-
   const handleRemove = () => {
     setPreview(null);
     onImageChange(null);
