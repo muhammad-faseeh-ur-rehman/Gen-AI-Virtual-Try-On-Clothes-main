@@ -13,7 +13,7 @@ const Footer = ({ isDarkMode }) => {
       }}
     >
       <Text style={{ color: textColor, fontSize: 14 }}>
-        Developed by{" "}
+        Developed by
         <a
           href="https://www.narenderkeswani.com"
           target="_blank"
