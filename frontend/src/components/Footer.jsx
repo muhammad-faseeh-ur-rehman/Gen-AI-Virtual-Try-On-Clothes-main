@@ -25,7 +25,7 @@ const Footer = ({ isDarkMode }) => {
           }}
         >
           Narender Keswani
-        </a>{" "}
+        </a>
         • All rights reserved © {new Date().getFullYear()}
       </Text>
     </footer>
