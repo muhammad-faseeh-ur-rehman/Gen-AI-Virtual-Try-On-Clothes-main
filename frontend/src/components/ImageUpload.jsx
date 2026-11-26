@@ -61,7 +61,7 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
                 top: -10,
                 right: -10,
                 fontSize: 20,
-                color: isDarkMode ? "#f87171" : "#ef4444", // red-400 or red-500
+                color: isDarkMode ? "#f87171" : "#ef4444",
                 backgroundColor: isDarkMode ? "#1f1f1f" : "#ffffff",
                 borderRadius: "50%",
                 cursor: "pointer",
