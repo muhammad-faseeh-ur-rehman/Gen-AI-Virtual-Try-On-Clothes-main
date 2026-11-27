@@ -96,7 +96,7 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
             className="ant-upload-hint"
             style={{ fontSize: 12, color: isDarkMode ? "#a1a1aa" : "#666" }}
           >
-            Image only • Max size: 10MB
+            Image only Max size: 10MB
           </p>
         </Dragger>
       )}
