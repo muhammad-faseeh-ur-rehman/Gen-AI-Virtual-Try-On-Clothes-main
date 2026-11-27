@@ -19,7 +19,7 @@ const ImageUpload = ({ label, onImageChange, isDarkMode = false }) => {
       }
       const isLt10M = file.size / 1024 / 1024 < 10;
       if (!isLt10M) {
-        message.error("Image must be smaller than 10MB!");
+        message.error("Images must be smaller than 10MB!");
         return Upload.LIST_IGNORE;
       }
       const reader = new FileReader();
